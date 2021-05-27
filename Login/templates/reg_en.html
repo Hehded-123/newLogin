@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="reg">
+        <div class="registr ">
+
+            <h1 class="uPay">Register</h1>
+            <a href="/LogIn_en.html">LogIn-en</a>
+            <a href="/LogIn_uz.html">LogIn-uz</a>
+            <div class="pasw">
+                <form action="" method="POST">
+                    {% csrf_token %}
+                    <div class="lab">
+                        <input class="inp" type="text"  name="email" required>
+                        <div class="border-bot"></div>
+                        <label for="">Email</label>    
+                    </div>
+                    <div class="lab">
+                        <input class="inp" type="text"  name="name" required>
+                        <div class="border-bot"></div>
+                        <label for="">Creat User</label>
+                    </div>
+                    <div class="lab">
+                        <input class="inp" type="password" name="password1" required>
+                        <div class="border-bot"></div>
+                        <label for="">Enter new password</label>
+                    </div>
+                    <div class="lab">
+                        <input class="inp" type="password" name="password2" required>
+                        <div class="border-bot"></div>
+                        <label for="">Password</label>
+                    </div>
+                    <input class="btn"type="submit" value="Ro`yxatan o`tish">
+                </form>    
+            </div>
+
+            <h3 class="povered">Povered by <a href="https://t.me/horun_ar_rashid_2002">Horun ar Rashid</a></h3>            
+
+        </div>
+    </div>
+</body>
+</html>
